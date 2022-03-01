@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="dbup-core" Version="4.5.0" />
+      <PackageReference Include="dbup-sqlserver" Version="4.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Migrations\202203011509Parent.sql" />
+      <EmbeddedResource Include="Migrations\202203011509Parent.sql" />
+      <None Remove="Migrations\2022030115Child.sql" />
+      <EmbeddedResource Include="Migrations\2022030115Child.sql" />
+    </ItemGroup>
+
+</Project>

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithDapper", "FunWithDapper\FunWithDapper.csproj", "{B7113FA0-C520-4CA9-9004-A794B827E302}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseMigrations", "DatabaseMigrations\DatabaseMigrations.csproj", "{147BD993-FA50-4D32-A889-5F4A14B6F088}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B7113FA0-C520-4CA9-9004-A794B827E302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7113FA0-C520-4CA9-9004-A794B827E302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7113FA0-C520-4CA9-9004-A794B827E302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147BD993-FA50-4D32-A889-5F4A14B6F088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147BD993-FA50-4D32-A889-5F4A14B6F088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147BD993-FA50-4D32-A889-5F4A14B6F088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147BD993-FA50-4D32-A889-5F4A14B6F088}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
