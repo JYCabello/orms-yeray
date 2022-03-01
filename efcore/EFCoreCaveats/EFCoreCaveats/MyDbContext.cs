@@ -13,7 +13,7 @@ public class MyDbContext : DbContext
 
         modelBuilder.Entity<ChildEntity>(entity =>
         {
-            entity.HasOne<ParentEntity>().WithMany().HasForeignKey(ce => ce.ParentID);
+            entity.HasOne(ce => ce.Parent).WithMany().HasForeignKey(ce => ce.ParentID);
         });
     }
 

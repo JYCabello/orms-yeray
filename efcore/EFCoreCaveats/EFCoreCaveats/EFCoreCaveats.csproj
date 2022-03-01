@@ -18,11 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Migrations" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Remove="Migrations\20220301133100_Initial.Designer.cs" />
+      <Compile Remove="Migrations\20220301133237_Initial.Designer.cs" />
     </ItemGroup>
 
 </Project>
