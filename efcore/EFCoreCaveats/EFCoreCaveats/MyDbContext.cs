@@ -9,11 +9,9 @@ public class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<ChildEntity>(entity =>
         {
-            entity.HasOne(ce => ce.Parent).WithMany().HasForeignKey(ce => ce.ParentID);
+            entity.HasOne(ce => ce.Parent).WithMany(cp => cp.Children).HasForeignKey(ce => ce.ParentID);
         });
     }
 
