@@ -11,14 +11,18 @@ public class MyDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<ParentEntity>(entity =>
-        {
-            entity.HasMany<ChildEntity>().WithOne().HasForeignKey(ce => ce.ParentID);
-        });
-
         modelBuilder.Entity<ChildEntity>(entity =>
         {
             entity.HasOne<ParentEntity>().WithMany().HasForeignKey(ce => ce.ParentID);
         });
+    }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
+
+        optionsBuilder
+            .UseLazyLoadingProxies()
+            .UseSqlServer("Server=localhost;Database=ormcaveats;User Id=sa;Password=abcd1234ABCD;");
     }
 }
