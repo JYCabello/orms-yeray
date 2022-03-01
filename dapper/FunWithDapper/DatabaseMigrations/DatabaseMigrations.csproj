@@ -16,7 +16,9 @@
       <None Remove="Migrations\202203011509Parent.sql" />
       <EmbeddedResource Include="Migrations\202203011509Parent.sql" />
       <None Remove="Migrations\2022030115Child.sql" />
-      <EmbeddedResource Include="Migrations\2022030115Child.sql" />
+      <EmbeddedResource Include="Migrations\202203011511Child.sql" />
+      <None Remove="Migrations\202203011518SeedData.sql" />
+      <EmbeddedResource Include="Migrations\202203011518SeedData.sql" />
     </ItemGroup>
 
 </Project>

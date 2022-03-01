@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using Dapper;
 using FunWithDapper;
 
-await using var connection = new SqlConnection("Server=localhost;Database=ormcaveats;User Id=sa;Password=abcd1234ABCD;");
+await using var connection = new SqlConnection("Server=localhost;Database=dapperisfun;User Id=sa;Password=abcd1234ABCD;");
 
 var parent = await connection
     .QueryFirstAsync<ParentEntity>("SELECT * FROM Parents");
